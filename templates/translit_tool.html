@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/common_css.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/css_trans.css') }}">
+</head>
+<body>
+	<div class="header">
+		<h1>Tool4Text</h1>
+		<div class="nav">
+			<ul>
+				<a href=""><li class="list" id="active">Transliteration Tool</li></a>
+				<a href=""><li class="list">OCR Text Processing</li></a>
+				<a href=""><li class="list">Webpage Tool</li></a>
+				<a href=""><li class="list">Meet Team</li></a>
+			</ul>
+		</div>
+	</div>
+	<h1 class="heading"> 
+		Transliteration Tool
+	</h1>
+	<form action="/trans" method="POST">
+		<label for="in_lang">Transliterate from </label>
+		<select name="inlang" id="inlang">
+			<option value="none" selected>Auto-detect &nbsp;</option>
+		</select>
+		<br><br>
+		<textarea id="in" name="input_text" rows="15">{{in_text}}</textarea>
+		<br>
+		<div class="ar">
+			<p class="downarrow">&#8595;</p>
+		</div>
+		<label for="out_lang">Transliterate into </label>
+		<select name="outlang" id="outlang">
+			<option value="Albanian">Albanian</option>
+			<option value="Amharic">Amharic</option>
+			<option value="Arabic">Arabic</option>
+			<option value="Armenian">Armenian</option>
+			<option value="Azerbaijani">Azerbaijani</option>
+			<option value="Basque">Basque</option>
+			<option value="Belarusian">Belarusian</option>
+			<option value="Bengali">Bengali</option>
+			<option value="Bosnian">Bosnian</option>
+			<option value="Bulgarian">Bulgarian</option>
+			<option value="Catalan">Catalan</option>
+			<option value="Chinese">Chinese</option>
+			<option value="Croatian">Croatian</option>
+			<option value="Czech">Czech</option>
+			<option value="Danish">Danish</option>
+			<option value="Dutch">Dutch</option>
+			<option value="English" selected>English</option>
+			<option value="Esperanto">Esperanto</option>
+			<option value="Estonian">Estonian</option>
+			<option value="Finnish">Finnish</option>
+			<option value="French">French</option>
+			<option value="Galician">Galician</option>
+			<option value="Georgian">Georgian</option>
+			<option value="German">German</option>
+			<option value="Greek">Greek</option>
+			<option value="Gujarati">Gujarati</option>
+			<option value="Haitian">Haitian</option>
+			<option value="Hebrew(modern)">Hebrew(modern)</option>
+			<option value="Hindi">Hindi</option>
+			<option value="Hungarian">Hungarian</option>
+			<option value="Icelandic">Icelandic</option>
+			<option value="Indonesian">Indonesian</option>
+			<option value="Irish">Irish</option>
+			<option value="Italian">Italian</option>
+			<option value="Japanese">Japanese</option>
+			<option value="Kannada">Kannada</option>
+			<option value="Khmer">Khmer</option>
+			<option value="Korean">Korean</option>
+			<option value="Latin">Latin</option>
+			<option value="Latvian">Latvian</option>
+			<option value="Lithuanian">Lithuanian</option>
+			<option value="Macedonian">Macedonian</option>
+			<option value="Malay">Malay</option>
+			<option value="Maltese">Maltese</option>
+			<option value="Marathi">Marathi</option>
+			<option value="Norwegian">Norwegian</option>
+			<option value="Persian">Persian</option>
+			<option value="Polish">Polish</option>
+			<option value="Portuguese">Portuguese</option>
+			<option value="Romanian">Romanian</option>
+			<option value="Russian">Russian</option>
+			<option value="Serbian">Serbian</option>
+			<option value="Slovak">Slovak</option>
+			<option value="Slovene">Slovene</option>
+			<option value="Spanish">Spanish</option>
+			<option value="Swahili">Swahili</option>
+			<option value="Swedish">Swedish</option>
+			<option value="Tagalog">Tagalog</option>
+			<option value="Tamil">Tamil</option>
+			<option value="Telugu">Telugu</option>
+			<option value="Thai">Thai</option>
+			<option value="Turkish">Turkish</option>
+			<option value="Ukrainian">Ukrainian</option>
+			<option value="Urdu">Urdu</option>
+			<option value="Vietnamese">Vietnamese</option>
+			<option value="Welsh">Welsh</option>
+			<option value="Yiddish">Yiddish</option>
+		</select>
+		<br><br>
+		<textarea id="out" name="input_text" rows="15" disabled>{{out_text}}</textarea>
+		<br><br>
+		<div class="ar">
+			<input type="Submit" value="submit" class="button">
+		</div>
+	</form>
+	<footer>
+	</footer>
+</body>
+</html>

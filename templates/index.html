@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/common_css.css') }}">
+</head>
+<body>
+	<div class="header">
+		<h1>Tool4Text</h1>
+		<div class="nav">
+			<ul>
+				<a href="translit_tool"><li class="list">Transliteration Tool</li></a>
+				<a href=""><li class="list">OCR Text Processing</li></a>
+				<a href=""><li class="list">Webpage Tool</li></a>
+				<a href=""><li class="list">Meet Team</li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="intro">
+		<div class="img">
+			<img src="{{ url_for('static', filename='images/tra.png') }}" alt="Transliteration Icon" title="Transliteration Icon" width="210px" height="210px">
+		</div>
+		<div class="content">
+			<h2>Transliteration Tool</h2>
+			<p>This tool is a simple, elegant way to deal with transliteration of any kind of language.<br>
+				It helps the user to pronounce words and names in foreign languages.
+		</p>
+		<br>
+		<a href="translit_tool" class="sp_a">Transliteration Tool &nbsp;&nbsp;<span class="arrow">&#8594;</span></a>
+		</div>
+	</div>
+	<div class="intro" style=" ">
+		<div class="img">
+			<img src="{{ url_for('static', filename='images/ocr.png') }}" width="210px" height="200px" alt="OCR Icon" title="OCR Icon">
+		</div>
+		<div class="content" style="">
+			<h2><abbr title="Optical Character Recogination">OCR</abbr> Text Processing</h2>
+			<p>This tool is an efficient way to convert text from the given image file.<br>
+				Additional to that, it allows users to transliterate the text directly from the image.
+			</p>
+			<br>
+			<a href="" class="sp_a">OCR Text Processing &nbsp;&nbsp;<span class="arrow">&#8594;</span></a>
+		</div>
+	</div>
+	<div class="intro" style=" margin-top: 5%; ">
+		<div class="img">
+			<img src="{{ url_for('static', filename='images/dashboard.png') }}" width="210px" height="200px" alt="Webpage Icon" title="Webpage Icon">
+		</div>
+		<div class="content" style="">
+			<h2>Webpage Processing Tool</h2>
+			<p>This tool has the unique ability to transform a webpage for a user.<br>
+			It avails users to pronounce the foreign language of the webpage.</p>
+			<br>
+			<a href="" class="sp_a">Webpage Tool &nbsp;&nbsp;<span class="arrow">&#8594;</span></a>
+		</div>
+	</div>
+	<div class="intro">
+		<div class="img">
+			<img src="{{ url_for('static', filename='images/group.png') }} " alt="Group Icon" title="Group Icon" width="210px" height="210px">
+		</div>
+		<div class="content" style="margin-top: 2%;">
+			<h2>Say &#9995; to Team !</h2>
+			<a href="" class="sp_a">Meet Team &nbsp;&nbsp;<span class="arrow">&#8594;</span></a>
+		</div>
+		
+	</div>
+	<footer>
+		
+	</footer>
+</body>
+</html>

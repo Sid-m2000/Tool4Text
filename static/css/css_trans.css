@@ -1,0 +1,34 @@
+.heading{
+			margin-left: 1%;
+		}
+		#inlang, #outlang{
+			background-color: #808080;
+			color: #fceb8d;
+			font-size: 101%;
+			border-radius: 5px;
+		}
+		#in, #out{
+			width: 80%;
+			background-color: #808080;
+			font-family: "Times New Roman", "Arial";
+			color: #fceb8d;
+			border-radius: 4px;
+		}
+		.ar{
+			margin: auto;
+			max-width: 400px;
+		}
+		.downarrow{
+			font-size: 300%;
+			color: #000000;
+			display: inline-block;
+			text-align: center;
+		}
+		.button{
+			background-color: #808080;
+			color: #fceb8d;
+			font-size: 18px;
+			font-family: 'Raleway', sans-serif;
+			padding: 10px 15px; 
+			border-radius: 10px;
+		}
